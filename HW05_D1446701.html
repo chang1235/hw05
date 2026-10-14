@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!-- 宣告使用 HTML5；DOCTYPE 是文件類型宣告，不需要結束標籤。 -->
+<html lang="zh-Hant">
+<!-- html 包住整份文件；lang="zh-Hant" 表示主要使用繁體中文。 -->
+<head>
+    <!-- head 放網頁資訊；這些資訊不會直接成為頁面中的報導文字。 -->
+    <meta charset="UTF-8">
+    <!-- UTF-8 可正確處理中文；meta 是空元素，不寫結束標籤。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport 讓行動裝置使用裝置寬度；不代表固定寬度的圖片會自動縮小。 -->
+    <meta name="description" content="走進台中文學館，認識日式宿舍群、文學公園與老榕樹，透過清單、表格、照片、影片與地圖閱讀城市文學故事。">
+    <!-- description 提供網頁摘要；author 標示作者。 -->
+    <meta name="author" content="張以姍">
+    <title>台中文學館報導｜城市裡的文藝風景</title>
+    <!-- title 顯示在瀏覽器分頁；與 body 中的 h1 用途不同。 -->
+</head>
+
+<body>
+    <!--
+        一頁式台中文學館報導。
+        本頁面僅使用 HTML，保留瀏覽器預設呈現，不加入 CSS 或 JavaScript。
+        註解使用「小於符號、驚嘆號、兩個連字號」開始，並以兩個連字號及大於符號結束。
+        註解不會顯示於網頁，但讀者可從原始碼看見，因此不要放私人資料。
+        使用一致的四個空格縮排；成對標籤都明確寫出結束標籤。
+    -->
+
+    <!-- header 是頁首；id="top" 是下方「回到頁首」連結的目的地。 -->
+    <header id="top">
+        <!-- h1 是本頁主標題；h2 用於各章節，依內容階層選用標題。 -->
+        <h1>台中文學館：城市裡的文藝風景</h1>
+        <p>從日式宿舍群到文學步道，一起閱讀台中的文學記憶。</p>
+        <!-- time 的 datetime 以標準日期格式提供機器可讀的日期。 -->
+        <p>作者：張以姍｜報導整理日期：<time datetime="2026-10-07">2026 年 10 月 14 日</time></p>
+        <p><small>本文為專題報導資料整理。</small></p>
+    </header>
+
+    <!-- nav 表示導覽區；href="#名稱" 會跳到本頁相同 id 的元素。 -->
+    <nav aria-label="報導目錄">
+        <h2>報導目錄</h2>
+        <ul>
+            <li><a href="#intro">館區簡介</a></li>
+            <li><a href="#highlights">景點特色與參觀順序</a></li>
+            <li><a href="#table">展館比較表</a></li>
+            <li><a href="#photo">文學館照片</a></li>
+            <li><a href="#video">影音報導</a></li>
+            <li><a href="#map">位置地圖</a></li>
+            <li><a href="#tips">走讀小提醒</a></li>
+            <li><a href="#sources">資料來源</a></li>
+        </ul>
+    </nav>
+
+    <!-- hr 表示內容主題的分隔，也是沒有結束標籤的空元素。 -->
+    <hr>
+
+    <!-- main 包住本頁主要內容；article 表示可獨立閱讀的完整報導。 -->
+    <main>
+        <article aria-label="台中文學館專題報導">
+            <!-- section 將報導分成有標題的章節；同一頁中的 id 不可重複。 -->
+            <section id="intro">
+                <h2>一、館區簡介</h2>
+                <!-- p 表示段落；strong 強調重要資訊，不用來取代標題。 -->
+                <p>
+                    台中文學館位於台中市西區，前身為警察宿舍群，經整修後於 <strong>2016 年</strong>正式開園，
+                    成為市民認識在地文學與歷史的重要藝文場域。園內結合日式木造建築、文學展館與綠意庭園，
+                    讓人能在喧囂的城市中找到靜心閱讀與散步的空間。
+                </p>
+                <p>
+                    園內最具代表性的地標是巨大的<strong>老榕樹</strong>與文學木棧道。
+                    這群日式宿舍建築充滿濃厚的歷史韻味，
+                    後來被妥善保存並活化為展覽空間，也是台中重要的文化地標之一。
+                </p>
+                <p>
+                    從日式木造房舍到文學主題展覽，台中文學館像一份可以細細品味的城市詩篇。
+                    本篇以展館特色與建議參觀順序，介紹這座充滿人文氣息的園區。
+                </p>
+                <!-- br 僅用於同段文字中需要的換行；不要用很多 br 製造間距。 -->
+                <p>館址：台中市西區樂群街 38 號。<br>閱讀重點：日式建築、文學展覽與綠意庭園。</p>
+            </section>
+
+            <section id="highlights">
+                <h2>二、景點特色與參觀順序</h2>
+                <h3>值得留意的三個特色</h3>
+                <!-- ul 是無序清單；li 是個別項目，適合不分先後的資訊。 -->
+                <ul>
+                    <li><strong>日式建築：</strong>保留完整的警察宿舍群，展現傳統木造美學。</li>
+                    <li><strong>百年老榕：</strong>園區內枝葉繁茂的大榕樹，為遊客提供遮蔭與獨特景觀。</li>
+                    <li><strong>文學氣息：</strong>常設展與主題特展串聯台中的文學發展史。</li>
+                </ul>
+
+                <h3>建議參觀順序</h3>
+                <p>以下是本報導規劃的參觀建議路線。</p>
+                <!-- ol 是有序清單；瀏覽器會依 li 的排列產生編號。 -->
+                <ol>
+                    <li>進入園區後，先閱讀導覽地圖，了解各棟展館分布位置。</li>
+                    <li>漫步至中庭廣場，欣賞老榕樹與日式木造建築群的交織景致。</li>
+                    <li>依次參觀各主題展館，閱讀在地作家的文學作品與手稿。</li>
+                    <li>最後在戶外文學步道或休憩區放慢腳步，感受藝文氛圍。</li>
+                </ol>
+            </section>
+
+            <section id="table">
+                <h2>三、展館比較表</h2>
+                <!--
+                    table 用於呈現資料，不用來排版整個網頁。
+                    保留 border="1" 呈現有框表格。
+                -->
+                <table border="1">
+                    <!-- caption 是表格標題，放在 table 內最前面。 -->
+                    <caption>台中文學館三處核心區域的特色與觀察重點</caption>
+                    <!-- thead 包住表頭；tr 是一橫列；th 是標題儲存格。 -->
+                    <thead>
+                        <tr>
+                            <!-- scope="col" 表示這個 th 是整欄的標題。 -->
+                            <th scope="col">區域名稱</th>
+                            <th scope="col">主要特色</th>
+                            <th scope="col">建議觀察重點</th>
+                        </tr>
+                    </thead>
+                    <!-- tbody 包住資料列；td 是一般資料儲存格。 -->
+                    <tbody>
+                        <tr>
+                            <!-- scope="row" 表示這個 th 是本列的標題。 -->
+                            <th scope="row">文學主題展館</th>
+                            <td>展示台中在地文學發展與作家手稿</td>
+                            <td>常設展內容及多媒體互動裝置</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">日式宿舍群</th>
+                            <td>保留歷史風貌的警察宿舍建築</td>
+                            <td>木造屋架、窗櫺與日式庭園造景</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">大榕樹廣場</th>
+                            <td>園區地標性老樹與戶外空間</td>
+                            <td>樹冠幅員與綠意盎然的休憩氛圍</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="photo">
+                <h2>四、文學館照片</h2>
+                <!-- figure 將圖片與圖說組成一個單位；figcaption 是圖說。 -->
+                <figure>
+                    <!--
+                        img 是空元素，不寫 /img 結束標籤。
+                        src 指定圖片網址；alt 描述照片內容。
+                    -->
+                    <img
+                        src="https://yusi-group.com/wp-content/uploads/2022/02/%E4%B8%8A%E5%85%B8%E6%99%AF%E8%A7%80%E3%80%8A%E8%87%BA%E4%B8%AD%E6%96%87%E5%AD%B8%E9%A4%A8%E5%91%A8%E9%82%8A%E6%99%AF%E8%A7%80%E5%85%AC%E5%9C%92%E3%80%8B-2.jpeg"
+                        alt="台中文學館日式建築與庭園景觀"
+                        width="480">
+                    <figcaption>
+                        古樸的日式建築是台中文學館的重要特色。
+                        圖片來源：<a href="https://yusi-group.com/%E6%97%A5%E6%B2%BB%E6%99%82%E6%9C%9F%E8%80%81%E5%AE%BF%E8%88%8D%E9%87%8D%E7%94%9F%EF%BC%8C%E8%AE%93%E5%8F%B0%E4%B8%AD%E5%9C%A8%E5%9C%B0%E6%96%87%E5%8F%B2%E5%82%B3%E6%89%BF-%E4%B8%8A/" target="_blank" rel="noopener noreferrer">上典景觀</a>。
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section id="video">
+                <h2>五、影音報導</h2>
+                <p>透過下方影片認識台中文學館的日式風情與文學故事。</p>
+                <!-- iframe 將 YouTube 播放器嵌入本頁 -->
+                <iframe
+                    width="480"
+                    height="270"
+                    src="https://www.youtube.com/embed/65004EWe5ko"
+                    title="台中文學館介紹影片"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+                <p>
+                    若播放器無法播放，請
+                    <a href="https://youtu.be/65004EWe5ko" target="_blank" rel="noopener noreferrer">在 YouTube 觀看台中文學館介紹影片（另開分頁）</a>。
+                </p>
+                <p><small>影片為外部作者發布的介紹，現場狀況請以最新官方資訊為準。</small></p>
+            </section>
+
+            <!-- 位置地圖章節 -->
+            <section id="map">
+                <h2>六、位置地圖：找到台中文學館</h2>
+                <p>台中文學館位於台中市西區，地址為<strong>樂群街 38 號</strong>。下方地圖標示本文介紹的館舍位置。</p>
+                <iframe
+                    src="https://maps.google.com/maps?q=24.13745,120.67102&amp;z=16&amp;output=embed"
+                    width="480"
+                    height="360"
+                    title="台中文學館位置 Google 地圖"
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+                <p><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8F%B0%E4%B8%AD%E6%96%87%E5%AD%B8%E9%A4%A8%2C%E5%8F%B0%E4%B8%AD%E5%B8%82" target="_blank" rel="noopener noreferrer">在 Google 地圖開啟台中文學館（另開分頁）</a></p>
+            </section>
+
+            <!-- 走讀小提醒補充資訊 -->
+            <aside id="tips">
+                <h2>走讀小提醒</h2>
+                <details open>
+                    <summary>參觀時的注意事項</summary>
+                    <ul>
+                        <li>穿著舒適鞋款，方便漫步於木棧道與庭園。</li>
+                        <li>尊重展覽規範，維護歷史建築與環境整潔。</li>
+                    </ul>
+                </details>
+            </aside>
+
+            <section id="sources">
+                <h2>七、資料來源</h2>
+                <p>本報導依下列資料整理。</p>
+                <ul>
+                    <li><a href="https://travel.taichung.gov.tw/" target="_blank" rel="noopener noreferrer">臺中觀光旅遊網：台中文學館</a></li>
+                    <li><a href="https://www.tlm.taichung.gov.tw/" target="_blank" rel="noopener noreferrer">台中文學館官方網站</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=65004EWe5ko" target="_blank" rel="noopener noreferrer">YouTube：台中文學館介紹影片</a></li>
+                </ul>
+                <p><small>資料整理日期：2026 年 10 月 14 日。</small></p>
+            </section>
+        </article>
+    </main>
+
+    <hr>
+    <!-- footer 是頁尾 -->
+    <footer>
+        <p>台中文學館專題報導｜作者：張以姍</p>
+        <p><a href="#top">回到頁首</a></p>
+    </footer>
+</body>
+</html>
